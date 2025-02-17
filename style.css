@@ -1,0 +1,686 @@
+*{
+    margin: 0%;padding: 0%;border: border-box;
+    }
+    html,body{
+        width: 100%;height: 100%;overflow-x: hidden;
+    }
+    .container1{
+        width: 100%;height: 100%;
+    }
+    .frstpg{
+        width: 100vw;height: 100vh;
+    }
+   
+
+    @font-face{
+        src: url(Sundaycoffee-X3JKg.ttf);
+        font-family: font4;
+    }
+.header{
+    display: flex;width: 100vw;height: 10vh;justify-content: center;background-color: rgba(255, 255, 255, 0.541);align-items: center;
+}
+.text{
+    
+    font-style: bold;font-family: font4;margin: 1%;padding: 1%;text-shadow:0 0 3px black;
+
+a{
+    color: white;text-decoration: none;
+}
+i{
+    color: white;text-decoration: none;
+}
+}
+.text:hover{
+    a{
+        color: black;scale: 1.03;text-shadow: 0 0 3px white;
+    }
+    i{
+        color: black;scale: 1.03;text-shadow: 0 0 3px white;
+    }
+}
+
+input{
+    border-radius: 10px;border: 1px solid white;height: 3vh;width: 10vw;
+}
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the video covers the container while maintaining aspect ratio */
+    z-index: -1;        /* Keeps the video behind any other content */
+  }
+  .hero{
+    width: 100vw;height: 50vh;
+  }
+  .hhh{
+
+    width: 100vw;height: 38vh;display: flex;justify-content: space-evenly;align-items: center;
+  }
+  .grid{
+    width: 30%;height: 100%;
+    margin: 1%;padding: 1%;justify-content:center;align-items:center;
+    i{
+      color: yellow;text-align: center;
+    }
+    p{
+      text-align: center;justify-content: center;align-items: center;color: white;font-size: 1rem;
+    }
+  }
+  
+  .secondpg{
+    width: 100vw;
+  }
+
+
+  /* Global Styles */
+
+  
+  /* Newsletter Container */
+  .newsletter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* 40% of the viewport height */
+    background-color: #f8e1c7; /* Warm coffee-like background color */
+    padding: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  /* Heading and Subheading */
+  .newsletter-container h2 {
+    font-size: 2.5rem;
+    color: #6f4f28; /* Coffee brown color */
+    margin: 0 0 10px;
+    font-weight: bold;
+  }
+  
+  .newsletter-container p {
+    font-size: 1.2rem;
+    color: #5d4037; /* Slightly darker brown for the text */
+    margin: 10px 0 20px;
+    font-weight: normal;
+  }
+  
+  /* Newsletter Form */
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 400px; /* Restrict the form width */
+    margin: 0 auto;
+  }
+  
+  .newsletter-form input {
+    padding: 12px;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    border: 1px solid #d68f3e; /* Golden coffee accent color */
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+  }
+  
+  .newsletter-form input:focus {
+    outline: none;
+    border-color: #a35a2c; /* Darker coffee color on focus */
+  }
+  
+  .newsletter-form button {
+    padding: 12px;
+    background-color: #d68f3e; /* Warm coffee-like color */
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #a35a2c; /* Darker coffee color on hover */
+  }
+  
+  .newsletter-form button:focus {
+    outline: none;
+  }
+.card_container{
+  width: 100vw;display: flex;justify-content: space-evenly;align-items: center;
+}
+  .card {
+    width: 300px;margin: 2%;padding: 1%;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* General card container */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  scale: 1.03;box-shadow: 10px 10px 13px rgb(187, 187, 187);cursor: pointer;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  z-index: 1;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.content h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.content p {
+  font-size: 14px;
+}
+
+.thrdpg{
+  width: 100vw;height: 100vh;
+}
+/* Container holding the video background */
+.video-background-container {
+  position: relative;
+  width: 100vw;   /* Full viewport width */
+  height: 100vh;  /* Full viewport height */
+  overflow: hidden;
+}
+
+/* Video styling to cover the full screen */
+.video-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Place video behind the content */
+}
+
+/* Container for content over the video */
+.content-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.content-container h1 {
+  font-size: 3rem;
+}
+
+.content-container p {
+  font-size: 1.25rem;
+}
+
+#w:hover{
+background-color: black;color: white;cursor: pointer;
+}
+.video-background-containerc {
+  position: relative;
+  width: 100vw;   /* Full viewport width */
+  
+  overflow: hidden;
+}
+
+
+/* Media queries for responsiveness */
+
+@media(max-width:376px){
+  .secondpg{
+    height: 170vh;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 3px;
+  }
+
+  .card {
+    width: 150px;
+    height: 150px;
+  }
+  .filler{
+    width: 100vw;height: 20vh;
+  }
+  #mm{
+    font-size: 3rem;
+  }
+  #pp{
+    font-size: 4rem;
+  }
+  .video-background-containerc{
+    height: 180vh;
+  }
+  
+}
+/* Mobile screens (up to 600px) */
+@media (min-width:380px) and (max-width: 600px) {
+  .secondpg{
+    height: 145vh;
+  }
+  
+  .card-container{
+    grid-template-columns: 1fr;
+    padding: 8px;
+  }
+
+  .card{
+    width: 150px;
+    height: 140px;
+  }
+
+  .content h2 {
+    font-size: 16px;
+  }
+
+  .content p {
+    font-size: 12px;
+  }
+
+  #pp{
+    font-size: 4rem;
+  }
+  .content-container{
+    position: relative;top: 50%;left: 50%;
+  }
+  #mm{
+    font-size: 4rem;
+  }
+  .frthpg{
+    height: 190vh;width: 100vw;
+  }
+  .video-background-containerc{
+    height: 180vh;
+  }
+}
+
+/* Tablets (600px to 900px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .secondpg{
+    height: 100vh;
+  }
+  .card-container {
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+  }
+
+  .card {
+    width: 190px;
+    height: 190px;
+  }
+
+  .content h2 {
+    font-size: 18px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+  .filler{
+    width: 100vw;height: 25vh;
+  }
+  
+  #mm{
+    font-size: 5rem;
+  }
+  .frthpg{
+    height: 170vh;width: 100vw;
+  }
+  .video-background-containerc{
+    height: 170vh;
+  }
+  #pp{
+    font-size: 7rem;
+  }
+}
+
+/* Larger screens (desktop and above) */
+@media (min-width: 1025px) {
+  .secondpg{
+    height: 90vh;
+  }
+  .card-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .card {
+    width: 250px;
+    height: 250px;
+  }
+
+  .content h2 {
+    font-size: 18px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+  .frthpg{
+    width: 100vw;height: 110vh;
+  }
+  #mm{
+    font-size: 7rem;
+  }
+  .video-background-containerc{
+    height: 110vh;
+  }
+  #pp{
+    font-size: 7rem;
+  }
+}
+
+  
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .newsletter-container {
+      height: auto; /* Allow container to expand on smaller screens */
+      padding: 20px;
+    }
+  
+    .newsletter-container h2 {
+      font-size: 2rem; /* Adjust font size for small screens */
+    }
+  
+    .newsletter-container p {
+      font-size: 1rem;
+    }
+  
+    .newsletter-form input, .newsletter-form button {
+      font-size: 1rem; /* Make the form fields more readable on small screens */
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    #background-video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    .header{
+        justify-content: space-evenly;
+    }
+    .text{
+        margin: 0.9%;padding:1%;
+        a{
+font-size: 0.4rem;
+        }
+        #user{
+font-size: 0.4rem;
+        }
+        #loc{
+            display: none;
+        }
+        input{
+            display: none;
+        }
+    }
+    #hero1{
+        font-size: 1rem;position: relative;top: 4%;
+    }
+    #hero2{
+        font-size: 0.5rem;position: relative;top: 8%;
+    }
+    .grid{
+      display: none;
+    }
+  }
+  
+  /* Medium screens (tablets in portrait or phones in landscape) */
+  @media (max-width: 768px) {
+    #background-video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    .text{
+        margin: 1%;
+        a{
+font-size: 1.1rem;
+        }
+        i{
+            font-size: 1.1rem;
+        }
+    }
+    #hero1{
+        font-size: 4rem;position: relative;top: 15%;
+    }
+    #hero2{
+        position: relative;top: 20%;font-size: 1rem;
+    }
+    .grid{
+      i{
+        font-size: 3rem;position: relative;left: 16%;
+      }
+      p{
+        font-size: 0.4rem;color: white;
+      }
+    }
+  }
+  
+  /* Larger screens (tablets in landscape or smaller desktops) */
+  @media (max-width: 1024px) {
+    #background-video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    .text{
+        margin: 1%;
+        a{
+font-size: 1.2rem;
+        }
+        i{
+            font-size: 1.2rem;
+        }
+    }
+    #hero1{
+        font-size: 4rem;position: relative;top: 20%;
+    }
+    #hero2{
+        position: relative;top: 25%;font-size: 1rem;
+    }
+    .grid{
+      i{
+        font-size: 4rem;position: relative;left: 36%;
+      }
+      p{
+        font-size: 1rem;color: white;font-size: 1rem;
+      }
+    }
+    
+  }
+  
+  /* Desktops and larger screens */
+  @media (min-width: 1025px) {
+    #background-video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    .text{
+        margin: 2%;
+        a{
+font-size: 1.5rem;
+        }
+        i{
+            font-size: 1.5rem;
+        }
+    }
+    #hero1{
+        font-size: 7rem;position: relative;top: 20%;
+    }
+    #hero2{
+        position: relative;top: 30%;font-size:1rem ;
+    }
+    .grid{
+      i{
+        font-size: 6rem;position: relative;left: 40%;
+      }
+      p{
+        font-size: 1rem;color: white;font-size: 1rem;
+      }
+    }
+    .card_container{
+      height: 40vh;
+    }
+  }
+
+.card_c {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.car_d {
+  background: rgba(222, 184, 135, 0.659);
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.car_d:hover {
+  transform: translateY(-10px); transform: rotateX(20deg);
+  transform: rotateY(20deg);
+}
+
+.car_d img {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+}
+
+.car_d h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.car_d p {
+  margin-top: 10px;
+  color: #666;
+}
+
+
+@media (max-width: 768px) {
+  .car_d {
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .car_d {
+    width: 200px;
+  }
+}
+footer a:hover {
+  color: #f39c12; /* Hover effect for links */
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 15px 10px;
+  }
+
+  .footer-section h4 {
+    font-size: 1rem;
+  }
+
+  footer .footer-section a {
+    font-size: 1rem;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+  }
+}

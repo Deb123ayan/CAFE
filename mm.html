@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="frstpg">
+            <div class="header">
+                <div class="text"><a href="">HOME</a></div>
+                <div class="text"><a href="">ABOUT</a></div>
+                <div class="text"><a href="">SERVICES</a></div>
+                <div class="text"><a href="">CONTACT US</a></div>
+                <div class="text"><a href="">ORDER</a></div>
+            </div>
+
+            <div class="hero_sec">
+                <div class="left"> 
+                    <p id="p1">Be The Fastest IN Delivering Your Food</p>
+                    <p id="p2">Enter Your Address Here...</p>
+                    
+                    <input type="text" required placeholder="Your address" id="i1">
+                </div>
+                <div class="right"></div>
+            </div>
+
+            <div class="bill-count">
+               <p>Billing amount</p>
+               <p>0.00 ₹</p>
+            </div>
+            <div class="card_c">
+
+                <div class="car_d">
+                  <img src="https://static.vecteezy.com/system/resources/thumbnails/024/669/688/original/order-now-lettering-stroke-text-reveals-animation-changing-colors-on-black-background-video.jpg" alt="Card 1">
+                  <h3>Easy To Order</h3>
+                  <p>Description of the first card.</p>
+                </div>
+              
+                <div class="car_d">
+                  <img src="https://cdn4.iconfinder.com/data/icons/eco-food-and-cosmetic-labels-3/128/Quality_food-512.png" alt="Card 2">
+                  <h3>Best Quality</h3>
+                  <p>Description of the second card.</p>
+                </div>
+              
+              
+                <div class="car_d">
+                  <img src="https://static.vecteezy.com/system/resources/previews/013/154/790/original/fast-moving-shipping-delivery-truck-line-flat-icon-for-apps-and-websites-express-delivery-quick-move-line-symbol-on-white-background-vector.jpg" alt="Card 3">
+                  <h3>Fast Delivery</h3>
+                  <p>Description of the third card.</p>
+                </div>
+              
+              
+              </div>
+            
+        </div>
+        <div class="filler">
+    
+        </div>
+
+        <div class="secndpg">
+          <div class="menu-container">
+            <p id="biriyani"> Biriyani</p>
+            <div class="card-container">
+                <!-- Card 1 -->
+                <div class="card" id="dish1">
+                    <img src="https://wallpaperaccess.com/full/1972917.jpg" alt="Chicken Biriyani" class="dish-image">
+                    <h3 class="dish-name">Chicken Biriyani</h3>
+                    <p class="dish-description">A delicious chicken biriyani with flavorful spices.</p>
+                    <p class="dish-price">₹ 399.00</p>
+                    <input type="number" id="quantity1" class="dish-quantity" value="0" min="0">
+                    <input type="checkbox" id="chk1" class="dish-checkbox" data-price="399.00">
+                </div>
+        
+                <!-- Card 2 -->
+                <div class="card" id="dish2">
+                    <img src="https://www.licious.in/blog/wp-content/uploads/2022/06/mutton-hyderabadi-biryani-01-750x750.jpg" alt="Mutton Biriyani" class="dish-image">
+                    <h3 class="dish-name">Mutton Biriyani</h3>
+                    <p class="dish-description">Mutton cooked with spices and layered with rice.</p>
+                    <p class="dish-price">₹ 499.00</p>
+                    <input type="number" id="quantity2" class="dish-quantity" value="0" min="0">
+                    <input type="checkbox" id="chk2" class="dish-checkbox" data-price="499.00">
+                </div>
+        
+                <!-- Card 3 -->
+                <div class="card" id="dish3">
+                    <img src="https://th.bing.com/th/id/R.e48a54dcb2cb42bf174fc9791d9fccb3?rik=UAvP2rJjypygLA&riu=http%3a%2f%2fwww.yummyfoodrecipes.in%2fresources%2fpicture%2forg%2fVegetable-Dum-Biryani.jpg&ehk=pjD3I2fER3cAaq%2fcSLeEupUSslwEKDxTDjidJV8w%2f64%3d&risl=&pid=ImgRaw&r=0" alt="Vegetable Biriyani" class="dish-image">
+                    <h3 class="dish-name">Veg Pulao</h3>
+                    <p class="dish-description">A flavorful vegetarian biriyani with mixed vegetables.</p>
+                    <p class="dish-price">₹ 279.00</p>
+                    <input type="number" id="quantity3" class="dish-quantity" value="0" min="0">
+                    <input type="checkbox" id="chk3" class="dish-checkbox" data-price="259.00">
+                </div>
+        
+                <!-- Card 4 -->
+                <div class="card" id="dish4">
+                    <img src="https://vismaifood.com/storage/app/uploads/public/db1/b5b/03a/thumb__700_0_0_0_auto.jpg" alt="Egg Biriyani" class="dish-image">
+                    <h3 class="dish-name">Egg Biriyani</h3>
+                    <p class="dish-description">A special biriyani with hard-boiled eggs and rich spices.</p>
+                    <p class="dish-price">₹ 249.00</p>
+                    <input type="number" id="quantity4" class="dish-quantity" value="0" min="0">
+                    <input type="checkbox" id="chk4" class="dish-checkbox" data-price="249.00">
+                </div>
+        
+                <!-- Card 5 -->
+                <div class="card" id="dish5">
+                    <img src="https://th.bing.com/th/id/OIP.Z05-2OrzWLBVN7xpX7rLXAHaHa?rs=1&pid=ImgDetMain" alt="Chicken fried rice" class="dish-image">
+                    <h3 class="dish-name">Chicken Fried Rice</h3>
+                    <p class="dish-description">A flavorful fish biriyani with kear flavor.</p>
+                    <p class="dish-price">₹ 219.00</p>
+                    <input type="number" id="quantity5" class="dish-quantity" value="0" min="0">
+                    <input type="checkbox" id="chk5" class="dish-checkbox" data-price="219.00">
+                </div>
+        
+                <!-- Card 6 -->
+                <div class="card" id="dish6">
+                    <img src="https://www.ruchikrandhap.com/wp-content/uploads/2018/03/Mixed-Vegetable-Fried-Rice-3-1.jpg" alt="Veg fried rice" class="dish-image">
+                    <h3 class="dish-name">  Veg Fried Rice</h3>
+                    <p class="dish-description"> cooked with spices and mixed with aromatic rice.</p>
+                    <p class="dish-price">₹ 180.00</p>
+                    <input type="number" id="quantity6" class="dish-quantity" value="0" min="0">
+                    <input type="checkbox" id="chk6" class="dish-checkbox" data-price="180.00">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="menu-container">
+          <p id="biriyani"> Rice And Bread</p>
+          <div class="card-container">
+              <!-- Card 1 -->
+              <div class="card" id="dish7">
+                <img src="https://via.placeholder.com/150" alt="Steamed Rice" class="dish-image">
+                <h3 class="dish-name">Steamed Rice</h3>
+                <p class="dish-description">Freshly steamed rice to complement your meal.</p>
+                <p class="dish-price">₹ 100.00</p>
+                <input type="number" id="quantity7" class="dish-quantity" value="0" min="0">
+                <input type="checkbox" id="chk7" class="dish-checkbox" data-price="100.00">
+            </div>
+            <!-- Card 7 -->
+<div class="card" id="dish7">
+  <img src="https://via.placeholder.com/150" alt="Steamed Rice" class="dish-image">
+  <h3 class="dish-name">Steamed Rice</h3>
+  <p class="dish-description">Freshly steamed rice to complement your meal.</p>
+  <p class="dish-price">₹ 100.00</p>
+  <input type="number" id="quantity7" class="dish-quantity" value="0" min="0">
+  <input type="checkbox" id="chk7" class="dish-checkbox" data-price="100.00">
+</div>
+
+<!-- Card 8 -->
+<div class="card" id="dish8">
+  <img src="https://via.placeholder.com/150" alt="Jeera Rice" class="dish-image">
+  <h3 class="dish-name">Jeera Rice</h3>
+  <p class="dish-description">Rice flavored with cumin seeds and mild spices.</p>
+  <p class="dish-price">₹ 120.00</p>
+  <input type="number" id="quantity8" class="dish-quantity" value="0" min="0">
+  <input type="checkbox" id="chk8" class="dish-checkbox" data-price="120.00">
+</div>
+
+<!-- Card 9 -->
+<div class="card" id="dish9">
+  <img src="https://via.placeholder.com/150" alt="Naan" class="dish-image">
+  <h3 class="dish-name">Naan</h3>
+  <p class="dish-description">Soft and fluffy Indian flatbread.</p>
+  <p class="dish-price">₹ 50.00</p>
+  <input type="number" id="quantity9" class="dish-quantity" value="0" min="0">
+  <input type="checkbox" id="chk9" class="dish-checkbox" data-price="50.00">
+</div>
+
+<!-- Card 10 -->
+<div class="card" id="dish10">
+  <img src="https://via.placeholder.com/150" alt="Garlic Naan" class="dish-image">
+  <h3 class="dish-name">Garlic Naan</h3>
+  <p class="dish-description">Naan topped with garlic and herbs.</p>
+  <p class="dish-price">₹ 70.00</p>
+  <input type="number" id="quantity10" class="dish-quantity" value="0" min="0">
+  <input type="checkbox" id="chk10" class="dish-checkbox" data-price="70.00">
+</div>
+
+<!-- Card 11 -->
+<div class="card" id="dish11">
+  <img src="https://via.placeholder.com/150" alt="Butter Naan" class="dish-image">
+  <h3 class="dish-name">Butter Naan</h3>
+  <p class="dish-description">Soft naan brushed with butter for a rich flavor.</p>
+  <p class="dish-price">₹ 80.00</p>
+  <input type="number" id="quantity11" class="dish-quantity" value="0" min="0">
+  <input type="checkbox" id="chk11" class="dish-checkbox" data-price="80.00">
+</div>
+
+<!-- Card 12 -->
+<div class="card" id="dish12">
+  <img src="https://via.placeholder.com/150" alt="Roti" class="dish-image">
+  <h3 class="dish-name">Roti</h3>
+  <p class="dish-description">Classic Indian flatbread, perfect with curries.</p>
+  <p class="dish-price">₹ 40.00</p>
+  <input type="number" id="quantity12" class="dish-quantity" value="0" min="0">
+  <input type="checkbox" id="chk12" class="dish-checkbox" data-price="40.00">
+</div>
+
+<!-- Card 13 -->
+<div class="card" id="dish13">
+  <img src="https://via.placeholder.com/150" alt="Paneer Butter Masala" class="dish-image">
+  <h3 class="dish-name">Paneer Butter Masala</h3>
+  <p class="dish-description">Cottage cheese cooked in a rich, creamy tomato gravy.</p>
+  <p class="dish-price">₹ 180.00</p>
+  <input type="number" id="quantity13" class="dish-quantity" value="0" min="0">
+  <input type="checkbox" id="chk13" class="dish-checkbox" data-price="180.00">
+</div>
+
+<!-- Card 14 -->
+<div class="card" id="dish14">
+  <img src="https://via.placeholder.com/150" alt="Dal Tadka" class="dish-image">
+  <h3 class="dish-name">Dal Tadka</h3>
+  <p class="dish-description">Yellow lentils cooked with spices and tempered with ghee.</p>
+  <p class="dish-price">₹ 130.00</p>
+  <input type="number" id="quantity14" class="dish-quantity" value="0" min="0">
+  <input type="checkbox" id="chk14" class="dish-checkbox" data-price="130.00">
+</div>
+
+<div class="card" id="dish15">
+    <img src="https://via.placeholder.com/150" alt="Chole Bhature" class="dish-image">
+    <h3 class="dish-name">Chole Bhature</h3>
+    <p class="dish-description">Spicy chickpea curry served with fried bread (bhature).</p>
+    <p class="dish-price">₹ 150.00</p>
+    <input type="number" id="quantity15" class="dish-quantity" value="0" min="0">
+    <input type="checkbox" id="chk15" class="dish-checkbox" data-price="150.00">
+</div>
+          </div>
+        </div>
+
+        
+
+
+
+      </div>
+
+
+
+
+    </div>
+</body>
+
+<script>
+    $(document).ready(function() {
+      // Function to update the total bill
+      function updateBill() {
+          var totalAmount = 0;
+          
+          // Loop through each checkbox and add its price times quantity if checked
+          $('.dish-checkbox:checked').each(function() {
+              var price = parseFloat($(this).data('price'));
+              var quantity = $(this).closest('.card').find('.dish-quantity').val();
+              totalAmount += price * parseInt(quantity);
+          });
+  
+          // Update the bill count in the UI
+          $('.bill-count p:last-child').text(totalAmount.toFixed(2) + " ₹");
+      }
+  
+      // Event listener for when a checkbox or quantity is changed
+      $('.dish-checkbox, .dish-quantity').change(function() {
+          updateBill(); // Call the function to update the bill when any checkbox or quantity is changed
+      });
+  });
+  </script>
+</html>
