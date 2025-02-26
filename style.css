@@ -640,7 +640,7 @@ font-size: 1.5rem;
 
 @media (max-width: 768px) {
   .car_d {
-    width: 250px;
+    width: 180px;
   }
 }
 
@@ -684,3 +684,4 @@ footer a:hover {
     font-size: 0.7rem;
   }
 }
+
