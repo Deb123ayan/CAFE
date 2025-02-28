@@ -608,8 +608,8 @@ font-size: 1.5rem;
 .car_d {
   background: rgba(222, 184, 135, 0.659);
   border-radius: 10px;
-  width: 300px;
-  padding: 20px;
+  width: 280px;
+  padding: 10px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
@@ -684,4 +684,3 @@ footer a:hover {
     font-size: 0.7rem;
   }
 }
-
