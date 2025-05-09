@@ -8,7 +8,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
     <script src="https://kit.fontawesome.com/d633623c26.js" crossorigin="anonymous"></script>
    
-
+<style>
+    
+</style>
 </head>
 <body>
     <div class="container1">
@@ -23,7 +25,7 @@
             <div class="text"><p><a href="">Contact Us</a></p></div>
             <div class="text"><p><a href="">Services</a></p></div>
             <div class="text"><p><a href="">Shop Now</a></p></div>
-            <div class="text"><a href="https://jovial-dieffenbachia-d14f6e.netlify.app/" id="user"><i class="fa-regular fa-user"></i></a></i></div>
+            <div class="text"><a href="" id="user"><i class="fa-regular fa-user"></i></a></i></div>
             <div class="text"><a href="" id="loc"><i class="fa-solid fa-location-dot"></i></a></i></div>
             <div class="text"><input type="search" placeholder="Search"></div>
             </div>
@@ -116,7 +118,7 @@
           
             <div class="content-container">
               <p style="font-family: papyrus;font-style: italic;text-shadow: 1px 1px 3px red;" id="pp">LOVE AT First BITE</p>
-             <a href="http://127.0.0.1:5500/Cafe%20new/menu_page.html"> <button style="height: 4rem;width: 12rem;border: 1px solid white;background-color: rgb(218, 32, 32);font-family: papyrus;color: yellow;text-align: center;text-shadow: 1px 1px 2px white;font-size: larger;border-radius: 10px;">Explore Our Menu</button></a>
+             <a href="earnest-cocada-67bb02.netlify.app"> <button style="height: 4rem;width: 12rem;border: 1px solid white;background-color: rgb(218, 32, 32);font-family: papyrus;color: yellow;text-align: center;text-shadow: 1px 1px 2px white;font-size: larger;border-radius: 10px;">Explore Our Menu</button></a>
             </div>
           </div>
           
@@ -235,5 +237,97 @@
 
 </div>
   
+<script>
+    
+document.addEventListener('DOMContentLoaded', function() {
+  // Add IDs to your page sections for navigation
+  const pageSections = [
+    { element: document.querySelector('.firstpg'), id: 'home' },
+    { element: document.querySelector('.secondpg'), id: 'menu' },
+    { element: document.querySelector('.thrdpg'), id: 'explore' },
+    { element: document.querySelector('.frthpg'), id: 'membership' }
+  ];
+  
+  // Add IDs to each section
+  pageSections.forEach(section => {
+    if (section.element) {
+      section.element.id = section.id;
+    }
+  });
+  
+  // Update navigation links with smooth scroll functionality
+  const navLinks = document.querySelectorAll('.header .text a');
+  
+  // Map nav links to sections
+  const navMap = {
+    'Home': 'home',
+    'About': 'menu',     // Mapping to sections you have
+    'Services': 'explore',
+    'Shop Now': 'membership'
+  };
+  
+  navLinks.forEach(link => {
+    const text = link.textContent.trim();
+    if (navMap[text]) {
+      link.setAttribute('href', `#${navMap[text]}`);
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        
+        if (targetElement) {
+          // Add the smooth scroll effect
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    }
+  });
+  
+  // Add scroll-based animations
+  const addScrollAnimations = () => {
+    // Get all sections
+    const sections = document.querySelectorAll('.firstpg, .secondpg, .thrdpg, .frthpg');
+    
+    // Create intersection observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        // Add animation class when section enters viewport
+        if (entry.isIntersecting) {
+          entry.target.classList.add('section-visible');
+        }
+      });
+    }, { threshold: 0.3 }); // Trigger when 30% of section is visible
+    
+    // Observe each section
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  };
+  
+  addScrollAnimations();
+  
+  // Add scroll progress indicator
+  const addScrollProgress = () => {
+    // Create progress bar element
+    const progressBar = document.createElement('div');
+    progressBar.className = 'scroll-progress';
+    document.body.appendChild(progressBar);
+    
+    // Update progress on scroll
+    window.addEventListener('scroll', () => {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrollPercentage = (scrollTop / scrollHeight) * 100;
+      
+      progressBar.style.width = scrollPercentage + '%';
+    });
+  };
+  
+  addScrollProgress();
+});
+</script>
 </body>
 </html>
