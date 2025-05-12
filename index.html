@@ -21,7 +21,7 @@
               </video>
         <div class="header">
             <div class="text"><p><a href="">Home</a></p></div>
-            
+            <div class="text"><p><a href="https://genuine-faun-459a04.netlify.app/">About</a></p></div>
             <div class="text"><p><a href="https://fancy-alpaca-3090e4.netlify.app/">Contact Us</a></p></div>
             <div class="text"><p><a href="">Services</a></p></div>
             <div class="text"><p><a href="">Shop Now</a></p></div>
@@ -236,98 +236,6 @@
 
 
 </div>
-  
-<script>
-    
-document.addEventListener('DOMContentLoaded', function() {
-  // Add IDs to your page sections for navigation
-  const pageSections = [
-    { element: document.querySelector('.firstpg'), id: 'home' },
-    { element: document.querySelector('.secondpg'), id: 'menu' },
-    { element: document.querySelector('.thrdpg'), id: 'explore' },
-    { element: document.querySelector('.frthpg'), id: 'membership' }
-  ];
-  
-  // Add IDs to each section
-  pageSections.forEach(section => {
-    if (section.element) {
-      section.element.id = section.id;
-    }
-  });
-  
-  // Update navigation links with smooth scroll functionality
-  const navLinks = document.querySelectorAll('.header .text a');
-  
-  // Map nav links to sections
-  const navMap = {
-    'Home': 'home',
-    'About': 'menu',     // Mapping to sections you have
-    'Services': 'explore',
-    'Shop Now': 'membership'
-  };
-  
-  navLinks.forEach(link => {
-    const text = link.textContent.trim();
-    if (navMap[text]) {
-      link.setAttribute('href', `#${navMap[text]}`);
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-        
-        if (targetElement) {
-          // Add the smooth scroll effect
-          targetElement.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
-    }
-  });
-  
-  // Add scroll-based animations
-  const addScrollAnimations = () => {
-    // Get all sections
-    const sections = document.querySelectorAll('.firstpg, .secondpg, .thrdpg, .frthpg');
-    
-    // Create intersection observer
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        // Add animation class when section enters viewport
-        if (entry.isIntersecting) {
-          entry.target.classList.add('section-visible');
-        }
-      });
-    }, { threshold: 0.3 }); // Trigger when 30% of section is visible
-    
-    // Observe each section
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-  };
-  
-  addScrollAnimations();
-  
-  // Add scroll progress indicator
-  const addScrollProgress = () => {
-    // Create progress bar element
-    const progressBar = document.createElement('div');
-    progressBar.className = 'scroll-progress';
-    document.body.appendChild(progressBar);
-    
-    // Update progress on scroll
-    window.addEventListener('scroll', () => {
-      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const scrollPercentage = (scrollTop / scrollHeight) * 100;
-      
-      progressBar.style.width = scrollPercentage + '%';
-    });
-  };
-  
-  addScrollProgress();
-});
-</script>
+ 
 </body>
 </html>
